@@ -1,0 +1,97 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+$gray: #777;
+$hidden-light-gray: #eaeaea;
+$light-gray: #555;
+$lighter-gray: #222;
+$white: #fff;
+
+body {
+  padding-top: 60px;
+}
+
+footer {
+  color: $gray;
+  border-top: 1px solid $hidden-light-gray;
+  margin-top: 45px;
+  padding-top: 5px;
+
+  a {
+    color: $light-gray;
+
+    &:hover {
+      color: $lighter-gray;
+    }
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: $gray;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center{
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  color: $white;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 9px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
