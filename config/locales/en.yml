@@ -20,4 +20,41 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  ror_tut: "Ruby on Rails Tutorial"
+  ror: "Ruby on Rails"
+  b_author: "Michael Hartl"
+
+  # Single word
+  the: "The"
+  by: "by"
+  book: "book"
+  and: "and"
+
+  # Links
+  home: "Home"
+  help: "Help"
+  login: "Login"
+  about: "About"
+  contact: "Contact"
+  news: "News"
+  app_name: "Sample App"
+
+  # Long string
+  welcome: "Welcome to the Sample App"
+
+  home_1: "This is the home page for the"
+  home_2: "sample application."
+
+  help_1: "Get help on the Ruby on Rails Tutorial at the"
+  help_2: "Rails Tutorial help page"
+  help_3: "To get help on this sample app, see the"
+
+  cnct_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+  cnct_2: "contact page"
+
+  abt_1: "is a"
+  abt_2: "screencast series"
+  abt_3: "to teach web development with"
+  abt_4: "This is the sample application for the tutorial."
+
+  sgup_h: "Sign up now!"
