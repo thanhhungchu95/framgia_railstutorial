@@ -1,6 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$light-gray: #777;
+$white: #fff;
+$lighter-gray: #555;
+$lightest-gray: #222;
+$like-hidden-gray: #eaeaea;
+
 body {
   padding-top: 60px;
 }
@@ -37,7 +43,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $light-gray;
 }
 
 p {
@@ -49,7 +55,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -57,20 +63,21 @@ p {
 }
 
 #logo:hover {
-  color: #fff;
+  color: $white;
   text-decoration: underline;
 }
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;color: #777;
+  border-top: 1px solid $like-hidden-gray;
+  color: $light-gray;
 
   a {
-    color: #555;
+    color: $lighter-gray;
 
     &:hover {
-      color: #222;
+      color: $lightest-gray;
     }
   }
 
