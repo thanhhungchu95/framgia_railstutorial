@@ -49,6 +49,10 @@ GEM
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.5)
+    config (1.4.0)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.1.1)
+    deep_merge (1.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     faker (1.7.3)
@@ -144,6 +148,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap-sass
   byebug
+  config
   faker
   jbuilder (~> 2.5)
   jquery-rails
