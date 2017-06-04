@@ -1,23 +1,55 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  common:
+    rubyonrails: "Ruby on Rails"
+    rubyonrails_tut: "Ruby on Rails Tutorial"
+    rails_tut_url: "http://www.railstutorial.org/"
+    rails_tut_book_url: "http://www.railstutorial.org/book"
+    rails_tut_help_url: "http://www.railstutorial.org/help"
+    rails_tut_new_url: "http://news.railstutorial.org/"
+    rails_tut_cast_url: "http://screencasts.railstutorial.org/"
+    rubyonrails_url: "http://rubyonrails.org/"
+    book_author_url: "http://www.michaelhartl.com/"
+  title:
+    base: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    footer:
+      about: "About"
+      book_author: "Michael Hartl"
+      news: "News"
+    header:
+      app_name: "sample app"
+      help: "Help"
+      home: "Home"
+      log_in: "Log in"
+  static_pages:
+    about:
+      about: "About"
+    help:
+      help: "Help"
+    home:
+      home: "Home"
+  users:
+    new:
+      signup: "Sign up"
+  matched:
+    and: "and"
+    book: "book"
+    by: "by"
+    isa: "is a"
+    the: "The"
+  sentence:
+    about:
+      cast: "screencast series"
+      sample: "This is the sample application for the tutorial."
+      teach: "to teach web development with"
+    help:
+      get: "Get help on the Ruby on Rails Tutorial at the"
+      page: "Rails Tutorial help page"
+      sample: "To get help on this sample app, see the"
+    home:
+      page: "This is the home page for the"
+      sample: "sample application."
+      signup: "Sign up now!"
+      welcome: "Welcome to the Sample App"
+    signup:
+      page: "This will be a signup page for new users."
