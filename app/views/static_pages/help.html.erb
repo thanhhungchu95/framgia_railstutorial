@@ -1,10 +1,10 @@
 <% provide :title, t(".help") %>
 <h1><%= t ".help" %></h1>
 <p>
-  <%= t "sentence.help.get" %>
-  <%= link_to t("sentence.help.page"), t("common.rails_tut_help_url") %>
-  <%= t "sentence.help.sample" %>
-  <%= link_to t "common.rails_tut_book_url" do %>
-    <em><%= t "common.rubyonrails_tut" %></em>
+  <%= t ".get" %>
+  <%= link_to t(".page"), t("url.rails_tut_help_url") %>.
+  <%= t ".sample" %>
+  <%= link_to t "url.rails_tut_book_url" do %>
+    <em><%= t "rubyonrails_tut" %></em>.
   <% end %>
 </p>

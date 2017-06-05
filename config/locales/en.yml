@@ -1,7 +1,8 @@
 en:
-  common:
-    rubyonrails: "Ruby on Rails"
-    rubyonrails_tut: "Ruby on Rails Tutorial"
+  rubyonrails: "Ruby on Rails"
+  rubyonrails_tut: "Ruby on Rails Tutorial"
+  base_title: "Ruby on Rails Tutorial Sample App"
+  url:
     rails_tut_url: "http://www.railstutorial.org/"
     rails_tut_book_url: "http://www.railstutorial.org/book"
     rails_tut_help_url: "http://www.railstutorial.org/help"
@@ -9,8 +10,6 @@ en:
     rails_tut_cast_url: "http://screencasts.railstutorial.org/"
     rubyonrails_url: "http://rubyonrails.org/"
     book_author_url: "http://www.michaelhartl.com/"
-  title:
-    base: "Ruby on Rails Tutorial Sample App"
   layouts:
     footer:
       about: "About"
@@ -24,32 +23,38 @@ en:
   static_pages:
     about:
       about: "About"
-    help:
-      help: "Help"
-    home:
-      home: "Home"
-  users:
-    new:
-      signup: "Sign up"
-  matched:
-    and: "and"
-    book: "book"
-    by: "by"
-    isa: "is a"
-    the: "The"
-  sentence:
-    about:
       cast: "screencast series"
       sample: "This is the sample application for the tutorial."
       teach: "to teach web development with"
     help:
       get: "Get help on the Ruby on Rails Tutorial at the"
+      help: "Help"
       page: "Rails Tutorial help page"
       sample: "To get help on this sample app, see the"
     home:
+      home: "Home"
       page: "This is the home page for the"
       sample: "sample application."
       signup: "Sign up now!"
       welcome: "Welcome to the Sample App"
-    signup:
-      page: "This will be a signup page for new users."
+  users:
+    new:
+      signup: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm: "Confirmation"
+      create: "Create my account"
+    create:
+      welcome: "Welcome to Sample App!"
+      error: "Your information is invalid!"
+  shared:
+    error_messages:
+      error: "error"
+      form_contain: "The form contains"
+  word:
+    and: "and"
+    book: "book"
+    by: "by"
+    isa: "is a"
+    the: "The"
