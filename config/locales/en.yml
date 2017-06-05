@@ -17,9 +17,25 @@ en:
       news: "News"
     header:
       app_name: "sample app"
+      account: "Account"
       help: "Help"
       home: "Home"
-      log_in: "Log in"
+      login: "Log in"
+      logout: "Log out"
+      profile: "Profile"
+      settings: "Settings"
+      users: "Users"
+  sessions:
+    new:
+      email: "Email"
+      login: "Log in"
+      logout_first: "Please log out current account first"
+      non_account: "Don't have an account."
+      password: "Password"
+      signup: "Sign up now!"
+    create:
+      welcome: "Welcome back"
+      error: "Invalid email/password combination"
   static_pages:
     about:
       about: "About"
