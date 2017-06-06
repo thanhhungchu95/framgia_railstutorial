@@ -1,0 +1,15 @@
+<% provide :title, t(".all_users") %>
+<h1><%= t ".all_users" %></h1>
+<ul class="show_user_info">
+  <% @users.each do |user| %>
+    <li>
+      <%= gravatar_for user, size: 50 %>
+      <%= link_to user.name, user %>
+      <% if current_user.is_admin? && !current_user?(user) %>
+        | <%= link_to t(".delete"), user, method: :delete,
+          data: {confirm: t(".sure")} %>
+      <% end %>
+    </li>
+  <% end %>
+  <%= paginate @users, theme: "twitter-bootstrap-3" %>
+</ul>

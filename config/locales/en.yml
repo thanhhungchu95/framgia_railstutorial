@@ -3,13 +3,14 @@ en:
   rubyonrails_tut: "Ruby on Rails Tutorial"
   base_title: "Ruby on Rails Tutorial Sample App"
   url:
+    book_author_url: "http://www.michaelhartl.com/"
+    gravatar_change: "http://gravatar.com/emails"
     rails_tut_url: "http://www.railstutorial.org/"
     rails_tut_book_url: "http://www.railstutorial.org/book"
+    rails_tut_cast_url: "http://screencasts.railstutorial.org/"
     rails_tut_help_url: "http://www.railstutorial.org/help"
     rails_tut_new_url: "http://news.railstutorial.org/"
-    rails_tut_cast_url: "http://screencasts.railstutorial.org/"
     rubyonrails_url: "http://rubyonrails.org/"
-    book_author_url: "http://www.michaelhartl.com/"
   layouts:
     footer:
       about: "About"
@@ -55,20 +56,57 @@ en:
       signup: "Sign up now!"
       welcome: "Welcome to the Sample App"
   users:
+    index:
+      all_users: "All users"
+      delete: "Delete"
+      sure: "Are you sure?"
     new:
-      signup: "Sign up"
-      name: "Name"
-      email: "Email"
-      password: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      signup: "Sign up"
     create:
       welcome: "Welcome to Sample App!"
       error: "Your information is invalid!"
+    edit:
+      change: "Change"
+      confirm: "Confirmation"
+      correct: "You can't update information of other account"
+      edit: "Edit user"
+      email: "Email"
+      login_first: "Please login before update your information"
+      password: "Password"
+      name: "Name"
+      save: "Save changes"
+      update: "Update your profile"
+    update:
+      update: "Profile updated"
+      error: "Profile not updated"
+    destroy:
+      delete_done: "Delete user done"
+      delete_failed: "Failed. May be this user is admin. Delete is forbidden"
   shared:
     error_messages:
       error: "error"
       form_contain: "The form contains"
+  views:
+    pagination:
+      first: "<= First"
+      last: "Last =>"
+      previous: "< Prev"
+      next: "Next >"
+      truncate: "..."
+    helpers:
+      page_entries_info:
+        one_page:
+          display_entries:
+            zero: "%{entry_name} not found"
+            one: "Displaying <b>1</b> %{entry_name}"
+            other: "Displaying <b>all %{count}</b> %{entry_name}"
+        more_pages:
+          display_entries: "Displaying %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> in total"
   word:
     and: "and"
     book: "book"
