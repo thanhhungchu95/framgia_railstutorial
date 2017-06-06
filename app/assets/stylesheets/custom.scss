@@ -64,7 +64,7 @@ p {
 }
 
 /* Header */
-#logo {
+.logo {
   color: $white;
   float: left;
   font-size: 1.7em;
@@ -152,7 +152,7 @@ input[type=submit] {
   @extend .btn-primary;
 }
 
-#error_explanation {
+.error_explanation {
   color: $red;
   ul {
     color: $red;
@@ -165,4 +165,21 @@ input[type=submit] {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin: -10px 0 10px;
+  input[type=checkbox] {
+    margin-left: 0px;
+  }
+  span {
+    font-weight: bold;
+    line-height: 25px;
+    margin-left: 25px;
+    vertical-align: middle;
+  }
+}
+
+.remember {
+  width: auto;
 }

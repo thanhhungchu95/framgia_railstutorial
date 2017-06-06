@@ -32,6 +32,7 @@ en:
       logout_first: "Please log out current account first"
       non_account: "Don't have an account."
       password: "Password"
+      auto_login: "Remember me on this computer"
       signup: "Sign up now!"
     create:
       welcome: "Welcome back"
