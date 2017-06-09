@@ -1,0 +1,21 @@
+<% provide :title, t(".edit") %>
+<h1><%= t ".update" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user do |f| %>
+      <%= render "shared/error_messages" %>
+      <%= f.label t ".name" %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label t ".email" %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label t ".password" %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label t ".confirm" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <%= f.submit t ".update" %>
+    <% end %>
+    <div class="gravatar_edit"><%= gravatar_for @user %>
+      <%= link_to t(".change"), t("url.gravatar_change"), target: "_blank" %>
+    </div>
+  </div>
+</div>

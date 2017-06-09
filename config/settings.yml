@@ -8,3 +8,5 @@ user:
   helper:
     gravatar:
       size: 80
+  index:
+    per_page: 10

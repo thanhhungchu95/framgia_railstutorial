@@ -4,9 +4,11 @@ gem "rails", "~> 5.0.3"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
+gem "bootstrap-kaminari-views"
 gem "bootstrap-sass"
 gem "bcrypt", "~> 3.1.7"
 gem "config"
+gem "kaminari"
 
 group :development, :test do
   gem "byebug", platform: :mri
