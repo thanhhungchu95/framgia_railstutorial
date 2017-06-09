@@ -37,7 +37,8 @@ en:
       signup: "Sign up now!"
     create:
       welcome: "Welcome back"
-      error: "Invalid email/password combination"
+      invalid_combine: "Invalid email/password combination"
+      not_activate: "Account not activated. Check your email for the activation link."
   static_pages:
     about:
       about: "About"
@@ -68,7 +69,7 @@ en:
       password: "Password"
       signup: "Sign up"
     create:
-      welcome: "Welcome to Sample App!"
+      welcome: "Please check your email to activate your account."
       error: "Your information is invalid!"
     edit:
       change: "Change"
@@ -107,6 +108,17 @@ en:
             other: "Displaying <b>all %{count}</b> %{entry_name}"
         more_pages:
           display_entries: "Displaying %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> in total"
+  user_mailer:
+    account_activation:
+      activation: "Account activation"
+      app_name: "Sample App"
+      hi: Hi
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activations:
+    edit:
+      success: "Account activated!"
+      invalid: "Invalid activation link"
   word:
     and: "and"
     book: "book"
