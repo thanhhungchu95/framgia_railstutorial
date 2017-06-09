@@ -68,8 +68,15 @@ en:
       password: "Password"
       signup: "Sign up"
     create:
-      welcome: "Welcome to Sample App!"
-      error: "Your information is invalid!"
+      app_name: "Sample App"
+      active: "Welcome to the Sample App! Click on the link below to activate your account"
+      activate: "Activate"
+      hi: "Hi"
+      invalid: Invalid activation link"
+      invalid_combine: "Invalid email/password combination"
+      not_activate: "Account not activated. Check your email for the activation link."
+      success: "Account activated!"
+      welcome: "Welcome to Sample App. Please check your email to activate your account."
     edit:
       change: "Change"
       confirm: "Confirmation"
@@ -107,6 +114,11 @@ en:
             other: "Displaying <b>all %{count}</b> %{entry_name}"
         more_pages:
           display_entries: "Displaying %{entry_name} <b>%{first} - %{last}</b> of <b>%{total}</b> in total"
+  user_mailer:
+    account_activation:
+      activation: "Account activation."
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account"
+      activate: "Activate"
   word:
     and: "and"
     book: "book"
