@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.where(activated: true).select(:id, :name, :email, :is_admin)
-      .order(:name).page(params[:page]).per Settings.user.index.per_page
+      .sort_by_name.page(params[:page]).per Settings.user.index.per_page
   end
 
   def new
@@ -79,7 +79,6 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-
-    render file: "public/404.html", layout: false unless @user
+    valid_info @user
   end
 end
