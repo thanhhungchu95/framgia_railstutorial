@@ -1,0 +1,19 @@
+<ol class="microposts">
+  <% microposts_for(user).each do |micropost| %>
+    <li id="micropost-<%= micropost.id %>">
+      <%= link_to gravatar_for(micropost.user, size: Settings.micropost.gravatar
+        .size), micropost.user %>
+      <span class="author"><%= link_to micropost.user.name, micropost.user %></span>
+      <span class="content"><%= micropost.content %></span>
+      <span class="post-time">
+        <%= t "word.posted" %>
+        <%= time_ago_in_words micropost.created_at %> <%= t "word.ago" %>.
+        <% if current_user? micropost.user %>
+          <%= link_to t(".delete"), micropost, method: :delete,
+            data: {confirm: t(".sure")} %>
+        <% end %>
+      </span>
+    </li>
+  <% end %>
+</ol>
+<%= paginate microposts_for(user), theme: "twitter-bootstrap-3" %>

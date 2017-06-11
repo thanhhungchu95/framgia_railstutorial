@@ -9,5 +9,11 @@ user:
   helper:
     gravatar:
       size: 80
+    post_per_page: 10
   index:
-    per_page: 10
+    per_page: 7
+micropost:
+  content:
+    max_length: 160
+  gravatar:
+    size: 50
