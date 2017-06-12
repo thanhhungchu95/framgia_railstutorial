@@ -5,6 +5,7 @@ user:
     max_length: 127
   password:
     min_length: 8
+    reset_time_expired: 24
   helper:
     gravatar:
       size: 80

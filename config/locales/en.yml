@@ -115,10 +115,35 @@ en:
       hi: Hi
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+    password_reset:
+      passwd_reset: "Password reset"
+      to_reset: "To reset your password click the link below:"
+      reset_passwd: "Reset password"
+      expired: "This link will expire in 24 hours."
+      not_request: "If you did not request your password to be reset, "
+      ignore: "please ignore this email and your password will stay as it is."
   account_activations:
     edit:
       success: "Account activated!"
       invalid: "Invalid activation link"
+  password_resets:
+    new:
+      forgot_passwd: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    create:
+      sent_reset: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+    edit:
+      reset_passwd: "Reset password"
+      update: "Update password"
+      password: "Password"
+      confirm: "Confirm"
+      has_expired: "This link is expired."
+    update:
+      empty: "can't be empty"
+      has_reset: "Password has been reset."
+      hasnt_reset: "Password hasn't been reset."
   word:
     and: "and"
     book: "book"
