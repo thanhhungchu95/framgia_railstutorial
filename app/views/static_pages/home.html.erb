@@ -1,9 +1,39 @@
-<div class="center jumbotron">
-  <h1><%= t ".welcome" %></h1>
-  <h2>
-    <%= t ".page" %>
-    <%= link_to t("rubyonrails_tut"), t("url.rails_tut_url") %>
-    <%= t ".sample" %>
-  </h2>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= link_to gravatar_for(current_user, size: Settings.micropost.gravatar
+          .size), current_user %>
+        <h1><%= current_user.name %></h1>
+        <span><%= link_to t(".profile"), current_user %></span>
+        <span><%= pluralize current_user.microposts.count, t(".micropost") %></span>
+      </section>
+      <section class="micropost_form">
+        <%= form_for @micropost do |f| %>
+          <%= render "shared/error_messages", object: f.object %>
+
+          <%= f.text_area :content, class: "form-control post_field",
+            placeholder: t(".compose") %>
+
+          <%= f.submit t ".post" %>
+        <% end %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".feed" %></h3>
+      <% if microposts_for(current_user).any? %>
+        <%= render "shared/microposts", user: current_user %>
+      <% end %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t ".welcome" %></h1>
+    <h2>
+      <%= t ".page" %>
+      <%= link_to t("rubyonrails_tut"), t("url.rails_tut_url") %>
+      <%= t ".sample" %>
+    </h2>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>

@@ -56,11 +56,17 @@ en:
       sample: "sample application."
       signup: "Sign up now!"
       welcome: "Welcome to the Sample App"
+      profile: "View my profile"
+      micropost: "micropost"
+      compose: "Compose new micropost..."
+      feed: "Micropost feed"
+      post: "Post"
   users:
     index:
       all_users: "All users"
       delete: "Delete"
       sure: "Are you sure?"
+      login_first: "Please login first"
     new:
       confirm: "Confirmation"
       create: "Create my account"
@@ -82,6 +88,8 @@ en:
       name: "Name"
       save: "Save changes"
       update: "Update your profile"
+    show:
+      microposts: "microposts"
     update:
       update: "Profile updated"
       error: "Profile not updated"
@@ -92,6 +100,9 @@ en:
     error_messages:
       error: "error"
       form_contain: "The form contains"
+    microposts:
+      sure: "Are you sure?"
+      delete: "Delete"
   views:
     pagination:
       first: "<= First"
@@ -144,9 +155,18 @@ en:
       empty: "can't be empty"
       has_reset: "Password has been reset."
       hasnt_reset: "Password hasn't been reset."
+  microposts:
+    create:
+      create: "Micropost created!"
+      not_create: "Micropost not created!"
+    destroy:
+      delete: "Micropost deleted!"
+      not_delete: "Micropost not deleted!"
   word:
+    ago: "ago"
     and: "and"
     book: "book"
     by: "by"
     isa: "is a"
+    posted: "Posted"
     the: "The"

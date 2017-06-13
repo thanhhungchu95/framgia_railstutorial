@@ -9,6 +9,7 @@ $gray-hidden: #eaeaea;
 $gray-white: #bbb;
 $red: red;
 $white: #fff;
+$white-gray: #e8e8e8;
 
 /* Declare mixin for box */
 @mixin box_sizing {
@@ -189,5 +190,49 @@ input[type=submit] {
     border-bottom: 1px $gray-lighter;
     overflow: auto;
     padding: 10px 0;
+  }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    border-top: 1px solid $white-gray;
+    overflow: auto;
+    padding: 10px 0;
+  }
+  .author {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .post-time {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin: 5px 10px 0 0;
+  }
+}
+
+.micropost_form {
+  margin-top: 10px;
+  .post_field {
+    border: 1px solid $white-gray;
+    font-size: 15px;
+    height: 96px;
+    overflow-y: scroll;
+    resize: none;
   }
 }
