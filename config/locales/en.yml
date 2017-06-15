@@ -90,6 +90,8 @@ en:
       update: "Update your profile"
     show:
       microposts: "microposts"
+      unfollow: "Unfollow"
+      follow: "Follow"
     update:
       update: "Profile updated"
       error: "Profile not updated"
@@ -103,6 +105,9 @@ en:
     microposts:
       sure: "Are you sure?"
       delete: "Delete"
+    stats:
+      following: "following"
+      followers: "followers"
   views:
     pagination:
       first: "<= First"

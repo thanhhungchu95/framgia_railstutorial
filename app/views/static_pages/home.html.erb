@@ -4,11 +4,16 @@
       <section class="user_info">
         <%= link_to gravatar_for(current_user, size: Settings.micropost.gravatar
           .size), current_user %>
-        <h1><%= current_user.name %></h1>
-        <span><%= link_to t(".profile"), current_user %></span>
-        <span><%= pluralize current_user.microposts.count, t(".micropost") %></span>
+        <div class="user-info-text">
+          <h1><%= current_user.name %></h1>
+          <span><%= link_to t(".profile"), current_user %></span>
+          <span><%= pluralize current_user.microposts.size, t(".micropost") %></span>
+        </div>
       </section>
-      <section class="micropost_form">
+      <section class="stats">
+        <%= render "shared/stats" %>
+      </section>
+      <section class="micropost-form">
         <%= form_for @micropost do |f| %>
           <%= render "shared/error_messages", object: f.object %>
 

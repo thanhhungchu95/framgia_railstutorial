@@ -1,0 +1,23 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <%= gravatar_for @user %>
+      <h1><%= @user.name %></h1>
+      <span><%= link_to t(".view_profile"), @user %></span>
+      <span><%= t ".posts" %> <%= @user.microposts.size %></span>
+    </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <h3><%= follow_title_for params[:action] %></h3>
+    <% if users_list_for(@user, follow_type: params[:action]).any? %>
+      <ul class="show_user_info follow">
+        <%= render users_list_for @user, follow_type: params[:action] %>
+      </ul>
+      <%= paginate users_list_for(@user, follow_type: params[:action]),
+        theme: "twitter-bootstrap-3" %>
+    <% end %>
+  </div>
+</div>

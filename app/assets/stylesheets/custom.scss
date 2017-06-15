@@ -2,6 +2,7 @@
 @import 'bootstrap';
 
 /* Declare variable for color code */
+$blue: blue;
 $gray: #777;
 $gray-light: #555;
 $gray-lighter: #222;
@@ -134,6 +135,11 @@ aside {
   }
 }
 
+.user-info-text {
+  margin-top: -15px;
+  overflow: hidden;
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -226,7 +232,7 @@ input[type=submit] {
   }
 }
 
-.micropost_form {
+.micropost-form {
   margin-top: 10px;
   .post_field {
     border: 1px solid $white-gray;
@@ -234,5 +240,33 @@ input[type=submit] {
     height: 96px;
     overflow-y: scroll;
     resize: none;
+  }
+}
+
+/* stats */
+
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+  a {
+    float: left;
+    font-weight: bold;
+    padding: 0 10px;
+
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}
+
+.follow-form {
+  width: 100px;
+  .follow-btn {
+    @extend .btn, .btn-primary;
+  }
+  .unfollow-btn {
+    @extend .btn, .btn-default;
   }
 }

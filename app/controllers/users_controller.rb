@@ -52,6 +52,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    render :show_follow
+  end
+
+  def followers
+    render :show_follow
+  end
+
   private
 
   def user_params

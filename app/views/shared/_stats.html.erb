@@ -1,0 +1,7 @@
+<% @user ||= current_user %>
+<%= link_to following_user_path @user do %>
+  <%= @user.following.size %> <%= t ".following" %>
+<% end %>
+<%= link_to followers_user_path @user do %>
+  <%= @user.followers.size %> <%= t ".followers" %>
+<% end %>
