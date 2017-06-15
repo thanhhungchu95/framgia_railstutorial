@@ -12,6 +12,9 @@ user:
     post_per_page: 10
   index:
     per_page: 7
+  relate:
+    following: "following"
+    followers: "followers"
 micropost:
   content:
     max_length: 160

@@ -7,10 +7,28 @@
         <%= @user.name %>
       </h1>
     </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+    </section>
   </aside>
   <div class="col-md-8">
+    <% if logged_in? && !current_user?(@user) %>
+      <div class="follow-form">
+        <% if current_user.following? @user %>
+          <%= form_for current_user.active_relationships.find_by(followed_id: @user.id),
+            html: {method: :delete}, remote: true do |f| %>
+            <%= f.submit t(".unfollow"), class: "unfollow-btn" %>
+          <% end %>
+        <% else %>
+          <%= form_for current_user.active_relationships.build do |f| %>
+            <%= hidden_field_tag :followed_id, @user.id %>
+            <%= f.submit t(".follow"), class: "follow-btn" %>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
     <% if microposts_for(@user).any? %>
-      <h3><%= microposts_for(@user).count %> <%= t ".microposts" %></h3>
+      <h3><%= microposts_for(@user).size %> <%= t ".microposts" %></h3>
       <%= render "shared/microposts", user: @user %>
     <% end %>
   </div>
